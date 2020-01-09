@@ -274,13 +274,13 @@
     </div>
     </section>
   </div>
-   	<footer>
+   	    <footer>
             <div class="row">
-            	<div class="container">
-                    <div class="col-md-4">
+                <div class="container">
+                    <div class="col-md-6">
                         <div class="footer_menu">
                         <h3>Main Menu</h3>
-                           <ul>
+                            <ul>
                                 <li><a href="index.html">Main</a></li>
                                <li><a href="contact-us.html">Contact us</a></li>
                                <li><a href="new_warehouse.html">Book Repository</a></li>
@@ -288,8 +288,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                    	<div class="footer_menu address">
+                    <div class="col-md-6">
+                        <div class="footer_menu address">
                         <h3>Contact Info</h3>
                            <ul>
                                 <li><i class="fa fa-map-marker"></i>
@@ -299,23 +299,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="footer_menu address">
-                        <h3>Location</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56146.705319567416!2d70.26898299965582!3d28.414154513393203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39375c713b45db39%3A0x28af23c1672a0170!2sRahim%20Yar%20Khan%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1577430243536!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <div class="copy">
                 <div class="row">
-                	<div class="container">
+                    <div class="container">
                         <div class="col-md-6">
-                        	<h5> - All Rights Reserved © 2020
-							</h5>
+                            <h5> - All Rights Reserved © 2020
+                            </h5>
                         </div>
                          <div class="col-md-6">
-                         <h5 class="arslan">Design by <a href="#">Django Master</a></h5>
+                         <h5 class="arslan">Design by <a href="">Django Master</a></h5>
                         </div>
                     </div>
                 </div>
@@ -326,82 +321,6 @@
 </html>
   <!--books slide -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script>
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 5,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $('.customer-logoss').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-</script>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 <!--data table-->
 <script>
 $(document).ready(function(){
