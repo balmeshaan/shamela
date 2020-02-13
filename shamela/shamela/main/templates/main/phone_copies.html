@@ -1,0 +1,35 @@
+{% extends "layout/layout.html" %}
+{% load static %}
+{% block content %}
+              <div class="popular_heading">
+
+
+                        <a href="#" class="change_background">NEW Copy Phones</a>
+
+
+            </div>
+                <div class="containerr">
+              <table id="myTable" class="table table-striped" >
+        <thead>
+          <tr>
+              <th>Sr#</th>
+            <th>Date</th>
+            <th>Views</th>
+            <th>Author Name</th>
+            <th>Book Name</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for b in books %}
+          <tr>
+          <td>{{ forloop.counter }}</td>
+            <td>{{ b.created_at.date }}</td>
+            <td>{{ b.views }} Views <i class="fa fa-eye"></i></td>
+            <td><a href="{% url 'aurthor' b.aurthor.id %}">{{ b.aurthor.name }}</a></td>
+            <td><a href="{% url 'description' b.id %}">{{ b.name }}</a></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+{% endblock %}

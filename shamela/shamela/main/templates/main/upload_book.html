@@ -1,0 +1,19 @@
+{% extends "layout/layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+   <div class="file-upload">
+   <h2>Upload Book</h2>
+                 <form method="POST" enctype="multipart/form-data">
+                     {% csrf_token %}
+                     {{ form|crispy }}
+                     <button type="submit" class="btn btn-primary">Upload</button>
+ </form>
+
+              </div>
+
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}

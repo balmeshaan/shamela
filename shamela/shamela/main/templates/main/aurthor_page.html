@@ -1,0 +1,68 @@
+{% extends "layout/layout.html" %}
+{% block content %}
+            <div class="containerr">
+            	<div class="desc_heading">
+
+                	<h2>{{ aurthor.name }}</h2>
+
+                    <div class="book_description">
+
+                     </div>
+
+                     <div class="col-md-12 main_desc ">
+                        <div class="author_desc_side">
+                            <p>اسم المصنف</p>
+                        </div>
+                        <div class="author_desc_side_right">
+                            <p>{{ aurthor.name }}</p>
+                        </div>
+
+
+                     </div>
+                      <div class="col-md-12 main_desc ">
+                         <div class="author_desc_side">
+                            <p>تاريخ الوفاة</p>
+                        </div>
+                        <div class="author_desc_side_right">
+                            <p>{{ aurthor.date_of_death }}</p>
+                        </div>
+
+
+                     </div>
+                      <div class="col-md-12 main_desc ">
+                        <div class="author_desc_side">
+                            <p>Translate the workbook</p>
+                        </div>
+                        <div class="author_desc_side_right">
+                            <p>Abu Hanifa (80 AH - 150 AH - 699-767 CE).</p>
+                        </div>
+
+                     </div>
+                     <div class="col-md-12 main_desc ">
+                        <div class="author_desc_side">
+                            <p>نبذة عن الكاتب</p>
+                        </div>
+                        <div class="author_desc_side_right">
+                            <p>{{ aurthor.detail_about_aurthor }}</p>
+                        </div>
+
+                     </div>
+                      <div class="col-md-12 main_desc ">
+                        <div class="author_desc_side">
+                            <p>كتب المصنف بالموقع:</p>
+                        </div>
+                        <div class="author_desc_side_right">
+                            <ol start="1">
+                            {% for b in books %}
+                              <li><a href="{% url 'description' b.id %}">{{ b.name }}  .{{ forloop.counter }}</a></li>
+                            {% endfor %}
+                            </ol>
+                        </div>
+
+
+                     </div>
+
+
+                </div>
+            </div>
+{% endblock %}
