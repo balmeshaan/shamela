@@ -1,11 +1,10 @@
-# shamela
-Run requirement.txt               pip install -r requirements.txt
-Run Command                      python manage.py makemigrations
-Run command                      python manage.py migrate
-run project                      python manage.py runserver
-craete superuser                 python manage.py createsuperuser
-
-note: tell me one think in email us page what do you want to write about yourself. write and send me as soon as possible.
-
 if any problem contact me this is my whatsapp number:   +923028108871
 email  : aliadil2201@gmail.com
+skype : shah87061
+
+
+You can contact 
+me by using above given addresses
+then i will show you your project 
+functionality.if you will approve
+them thn i will delivered it on fiverr.
